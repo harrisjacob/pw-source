@@ -50,7 +50,7 @@ export default function GithubButton(props){
 			<Button variant="outlined" className={classes.ButtonLayout} href={props.link}>
 				<Grid container spacing={0} className={classes.ButtonGrid}>
 					<Grid item xs={3} className={classes.ButtonItem}>
-						<img src="../../logos/GitHub-Mark-Black.png" className={classes.ButtonLogo}/>
+						<img src={process.env.PUBLIC_URL+"/logos/GitHubBlack.png"} className={classes.ButtonLogo}/>
 					</Grid>
 					<Grid item xs={8} className={classes.ButtonItem}>
 						<Typography variant="button" className={classes.ButtonText}>{props.text}</Typography>

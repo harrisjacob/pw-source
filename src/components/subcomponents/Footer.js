@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 import AppBar from '@material-ui/core/AppBar';
 import FooterButton from './FooterButton';
 import { makeStyles } from '@material-ui/core/styles';
-// import GitHubWhite from 'logos/GitHubWhite.png';
-// import LinkedIn from 'logos/LinkedIn.png';
 
 const useStyles = makeStyles((theme) => ({
   mainFooter: {
@@ -32,12 +30,12 @@ export default function Footer(){
 
 	const githubProp = {
 		link: 'http://github.com/harrisjacob',
-		// logo: {GitHubWhite},
+		logo: '/logos/GitHubWhite.png',
 	}
 
 	const linkdinProp = {
 		link: 'https://www.linkedin.com/in/jacob-harris-a2b462184/',
-		// logo: {LinkedIn},
+		logo: '/logos/LinkedIn.png',
 	}
 
 	return(<div className={classes.mainFooter}>

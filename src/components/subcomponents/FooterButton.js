@@ -30,7 +30,7 @@ export default function FooterButton(props){
 
 	return(
 			<Button variant="outlined" href={props.payload.link} className={classes.ButtonStyle}>
-				<img src={props.payload.logo} className={classes.ButtonLogo}/>
+				<img src={process.env.PUBLIC_URL + props.payload.logo} className={classes.ButtonLogo}/>
 			</Button>
 	);
 
