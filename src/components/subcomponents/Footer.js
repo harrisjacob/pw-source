@@ -30,12 +30,12 @@ export default function Footer(){
 
 	const githubProp = {
 		link: 'http://github.com/harrisjacob',
-		logo: '/logos/GitHubWhite.png',
+		logo: '/logos/GitHubWhite.PNG',
 	}
 
 	const linkdinProp = {
 		link: 'https://www.linkedin.com/in/jacob-harris-a2b462184/',
-		logo: '/logos/LinkedIn.png',
+		logo: '/logos/LinkedIn.PNG',
 	}
 
 	return(<div className={classes.mainFooter}>
