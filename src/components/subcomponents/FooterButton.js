@@ -1,9 +1,6 @@
 import React from 'react';
-import Grid from "@material-ui/core/Grid";
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import Hidden from '@material-ui/core/Hidden';
-import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
 	ButtonLogo:{

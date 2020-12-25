@@ -1,7 +1,5 @@
 import React from 'react';
 import Grid from "@material-ui/core/Grid";
-import { Link } from "react-router-dom";
-import AppBar from '@material-ui/core/AppBar';
 import FooterButton from './FooterButton';
 import { makeStyles } from '@material-ui/core/styles';
 

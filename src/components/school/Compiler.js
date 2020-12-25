@@ -67,7 +67,7 @@ export default function Compiler(){
 	return(<div>
 			<Typography variant="h2"className={classes.ProjectTitle}>B-Minor Compiler</Typography>
 			<div>
-				<img src={process.env.PUBLIC_URL+ "/images/compilerOverview.PNG"} className={classes.imgFormat}/>
+				<img src={process.env.PUBLIC_URL+ "/images/compilerOverview.PNG"} alt="" className={classes.imgFormat}/>
 				<div className={classes.imgCaption}>
 					<a href="#reference">[1]</a>
 				</div>

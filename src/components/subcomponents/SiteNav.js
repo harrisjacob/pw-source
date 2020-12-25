@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Dropdown from './Dropdown';
 import Grid from "@material-ui/core/Grid";
 import { makeStyles } from '@material-ui/core/styles';
@@ -8,8 +8,7 @@ import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   dropdown: {
-  	backgroundColor: 'rgba(52, 52, 52, 0.1)',
-  	
+  	backgroundColor: 'rgba(52, 52, 52, 0.1)',	
   },
   NavForm: {
   	paddingTop:'5%'
