@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/pw-source/static/css/main.bb8e4d5b.chunk.css",
-    "main.js": "/pw-source/static/js/main.9e6ac403.chunk.js",
-    "main.js.map": "/pw-source/static/js/main.9e6ac403.chunk.js.map",
-    "runtime-main.js": "/pw-source/static/js/runtime-main.06e85297.js",
-    "runtime-main.js.map": "/pw-source/static/js/runtime-main.06e85297.js.map",
-    "static/js/2.fa586f94.chunk.js": "/pw-source/static/js/2.fa586f94.chunk.js",
-    "static/js/2.fa586f94.chunk.js.map": "/pw-source/static/js/2.fa586f94.chunk.js.map",
-    "index.html": "/pw-source/index.html",
-    "static/css/main.bb8e4d5b.chunk.css.map": "/pw-source/static/css/main.bb8e4d5b.chunk.css.map",
-    "static/js/2.fa586f94.chunk.js.LICENSE.txt": "/pw-source/static/js/2.fa586f94.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/pw-source/static/media/raleway-v18-latin-900.7916b2df.woff"
+    "main.css": "/static/css/main.973a6721.chunk.css",
+    "main.js": "/static/js/main.69c44160.chunk.js",
+    "main.js.map": "/static/js/main.69c44160.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.346e1a37.js",
+    "runtime-main.js.map": "/static/js/runtime-main.346e1a37.js.map",
+    "static/js/2.fa586f94.chunk.js": "/static/js/2.fa586f94.chunk.js",
+    "static/js/2.fa586f94.chunk.js.map": "/static/js/2.fa586f94.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.973a6721.chunk.css.map": "/static/css/main.973a6721.chunk.css.map",
+    "static/js/2.fa586f94.chunk.js.LICENSE.txt": "/static/js/2.fa586f94.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/raleway-v18-latin-900.7916b2df.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.06e85297.js",
+    "static/js/runtime-main.346e1a37.js",
     "static/js/2.fa586f94.chunk.js",
-    "static/css/main.bb8e4d5b.chunk.css",
-    "static/js/main.9e6ac403.chunk.js"
+    "static/css/main.973a6721.chunk.css",
+    "static/js/main.69c44160.chunk.js"
   ]
 }
