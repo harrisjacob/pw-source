@@ -4,10 +4,16 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
 	banner: {
-		marginTop:'15%',
-		marginBottom:'15%',
+		// marginTop:'15%',
+		// marginBottom:'15%',
 		textAlign:"center",
-		backgroundColor: 'rgba(255,255,255,0.1)'
+		backgroundColor: 'rgba(255,255,255,0.1)',
+		position: 'absolute',
+		top: '50%',
+		width: '100%',
+		[theme.breakpoints.down('sm')]: {
+			top: '40%'
+     	},
 	},
 	bannerText:{
 		fontFamily: 'Fjalla One, sansSerif',
