@@ -26,10 +26,13 @@ const useStyles = makeStyles((theme) => ({
   	marginTop: '10%',
   	marginBottom: '10%',
   	marginLeft: '20px',
+    minHeight: '360px',
     [theme.breakpoints.down('sm')]: {
       marginTop: '30%',
       marginBottom: '30%',
+      minHeight: '240px'
     },
+
   },
   myName:{
     backgroundImage: 'linear-gradient(#C5C6C7 70%, #1F2833 90%)',
@@ -77,7 +80,7 @@ export default function Home(){
           <div>
             <Fade in={true} style={{transitionDelay: '300ms'}} timeout={1000}>
       				<Typography variant="h1" display="block" className={classes.myName}>
-      					I'm Jacob Harris
+      					I'm Jake Harris
       				</Typography>
             </Fade>
           </div>
