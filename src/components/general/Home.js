@@ -30,10 +30,6 @@ const useStyles = makeStyles((theme) => ({
       marginTop: '30%',
       marginBottom: '30%',
     },
-    [theme.breakpoints.down('xs')]: {
-      marginTop: '35%',
-      marginBottom: '35%',
-    },
   },
   myName:{
     backgroundImage: 'linear-gradient(#C5C6C7 70%, #1F2833 90%)',
