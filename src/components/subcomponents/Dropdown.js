@@ -26,7 +26,8 @@ const useStyles = makeStyles((theme) => ({
   },
   NavButton:{
     color: theme.palette.gray.main,
-    fontFamily: 'Raleway, sansSerif',
+    fontFamily: 'Fjalla One, sansSerif',
+    //fontFamily: 'Raleway, sansSerif',
     fontSize: '1.5rem',
     [theme.breakpoints.down('sm')]: {
       fontSize: '1.1rem',
