@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
 		flexDirection: 'column',
 		minHeight:'100vh',
 		width: '100%',
-		overflowY: 'scroll',
+		overflowY: 'hidden',
 		overflowX: 'hidden',
 	},
 	contentWrap: {
