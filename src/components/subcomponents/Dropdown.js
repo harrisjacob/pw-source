@@ -15,14 +15,30 @@ const useStyles = makeStyles((theme) => ({
     justifyContent:"center",
   },
   paper: {
-    marginRight: theme.spacing(2),
+    marginRight: theme.spacing(2), 
+  },
+  MenuBackground:{
+    backgroundColor: 'rgba(11,12,16,0.95)',
   },
   NavText:{
     color: theme.palette.gray.main,
     fontFamily: 'Fjalla One, sansSerif',
   },
   NavButton:{
-    color: 'black',
+    color: theme.palette.gray.main,
+    fontFamily: 'Raleway, sansSerif',
+    fontSize: '1.5rem',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '1.1rem',
+    },
+
+
+    "&:hover": {
+      backgroundColor:theme.palette.secondary.light,
+      // backgroundColor:theme.palette.secondary.main,
+       color: theme.palette.gray.main,
+
+    },
   }, 
 }));
 
@@ -77,7 +93,7 @@ export default function Dropdown(props) {
         </Button>
         <Popper open={open} anchorEl={anchorRef.current} role={undefined} transition>
           {({ TransitionProps, placement }) => (
-            <Grow
+            <Grow className={classes.MenuBackground}
               {...TransitionProps}
               style={{ transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom' }}
             >
@@ -113,13 +129,13 @@ export default function Dropdown(props) {
         </Button>
         <Popper open={open} anchorEl={anchorRef.current} role={undefined} transition>
           {({ TransitionProps, placement }) => (
-            <Grow
+            <Grow className={classes.MenuBackground}
               {...TransitionProps}
               style={{ transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom' }}
             >
               <Paper>
                 <ClickAwayListener onClickAway={handleClose}>
-                  <MenuList autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
+                  <MenuList className={classes.NavList} autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
                     <MenuItem className={classes.NavButton} onClick={handleClose} to="/mini-shell" component={Link}>Mini Shell</MenuItem>
                     <MenuItem className={classes.NavButton} onClick={handleClose} to="/soduku-solver" component={Link}>Soduku Solver</MenuItem>
                     <MenuItem className={classes.NavButton} onClick={handleClose} to="/algorithms" component={Link}>Algorithms</MenuItem>

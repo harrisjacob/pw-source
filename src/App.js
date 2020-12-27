@@ -30,8 +30,6 @@ const useStyles = makeStyles((theme) => ({
 		flex:1,
 		width: '100%',
 		backgroundColor: '#1F2833',
-		//backgroundImage: "url('../../static/images/lowpoly2.png')",
-		//backgroundSize: 'cover',
 	},
 	customDivider: {
     	marginTop: '1%',
