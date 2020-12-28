@@ -102,7 +102,7 @@ export default function Dropdown(props) {
                 <ClickAwayListener onClickAway={handleClose}>
                   <MenuList autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
                     <MenuItem className={classes.NavButton} onClick={handleClose} to="/compiler" component={Link}>Compiler</MenuItem>
-                    <MenuItem className={classes.NavButton} onClick={handleClose} to="/duck-animation" component={Link}>Duck Animation</MenuItem>
+                    <MenuItem className={classes.NavButton} onClick={handleClose} to="/duck-animation" component={Link}>Rubber Duck Animation</MenuItem>
                     <MenuItem className={classes.NavButton} onClick={handleClose} to="/web-server" component={Link}>Web Server</MenuItem>
                     <MenuItem className={classes.NavButton} onClick={handleClose} to="/nd-football-db" component={Link}>ND Football Database</MenuItem>
                   </MenuList>
