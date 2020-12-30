@@ -45,7 +45,7 @@ export default function Compiler(){
 					<br />
 					<Typography variant="body1" color="textPrimary"  className={commonStyle.bodyText} > The overall goal of the project is to build a complete compiler that accepts a high level language as input and produces working assembly code as output<sup>[2]</sup>. The language chosen for this project is a simplified version of C, called B-Minor. A description of the B-Minor syntax can be found in the references section of this page<sup>[3]</sup>. The compiler is broken into Scanner, Parser, Pretty-Printer, Typechecker, and Code Generation stages. Code for each stage is provided in the corresponding section.</Typography>
 					<div className={commonStyle.MasterButtonContainer}>
-						<GithubButton link="https://github.com/harrisjacob/Compilers/tree/master/master" text="B-Minor Compiler"/>
+						<GithubButton link="https://github.com/harrisjacob/Compilers/tree/master/master" text="Compiler"/>
 					</div>
 				</Grid>
 				
