@@ -35,6 +35,12 @@ const contentStyle = makeStyles((theme) => ({
         
         },
     },
+    buttonGrid:{
+        textAlign: "center",
+    },
+    MasterButtonContainer: {
+        textAlign: "center",
+    },
 }));
 
 
