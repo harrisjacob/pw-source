@@ -1,11 +1,18 @@
 import './App.css';
 import React from 'react';
 import { HashRouter as Router, Switch, Route} from "react-router-dom";
+
 import Home from './components/general/Home';
 import Compiler from './components/CS/Compiler';
-import DuckAnimation from './components/Animation/DuckAnimation';
 import MiniShell from './components/CS/MiniShell';
 import SudokuSolver from './components/CS/SudokuSolver';
+
+import DuckAnimation from './components/Animation/DuckAnimation';
+import LuxoAnimation from './components/Animation/LuxoAnimation';
+import PulseRifle from './components/Animation/PulseRifle';
+import CharacterModel from './components/Animation/CharacterModel';
+import CoronaBottle from './components/Animation/CoronaBottle';
+
 import { makeStyles, ThemeProvider} from '@material-ui/core/styles';
 import theme from "./theme.js"
 import Grid from "@material-ui/core/Grid";
@@ -60,6 +67,10 @@ export default function App() {
 						<Route exact path="/duck-animation" component={DuckAnimation} />						
 						<Route exact path="/sudoku-solver" component={SudokuSolver} />
 						<Route exact path="/mini-shell" component={MiniShell} />
+						<Route exact path="/luxo-animation" component={LuxoAnimation} />
+						<Route exact path="/alien-pulse-rifle" component={PulseRifle} />
+						<Route exact path="/character-model" component={CharacterModel} />
+						<Route exact path="/corona-bottle" component={CoronaBottle} />
 			            <Route exact path="/" component={Home} />
 		            </Switch>
 				</div>
