@@ -26,25 +26,19 @@ export default function SiteNav() {
 	const classes = useStyles();
 
 	return (<Grid container spacing={3} justify="center" className={classes.NavForm}>
-				<Grid item xs={3} align="center">
+				<Grid item xs={4} align="center">
 					<Button to="/" component={Link}>
 						<Typography variant="button" display="block" className={classes.ButtonText}>
 						Home
 						</Typography>
 					</Button>
 				</Grid>
-				<Grid item xs={3} align="center">
-					<Dropdown className={classes.dropdown} type="School" />
+
+				<Grid item xs={4} align="center">
+					<Dropdown className={classes.dropdown} type="CompSci" />
 				</Grid>
-				<Grid item xs={3} align="center">
-					<Dropdown type="Independent" />
-				</Grid>
-				<Grid item xs={3} align="center">
-					<Button to="/about" component={Link}>
-						<Typography variant="button" display="block" className={classes.ButtonText}>
-						About
-						</Typography>
-					</Button>
+				<Grid item xs={4} align="center">
+					<Dropdown className={classes.dropdown} type="ModelAndAnim" />
 				</Grid>
 			</Grid>
 			);

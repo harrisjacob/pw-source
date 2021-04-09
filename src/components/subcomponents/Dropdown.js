@@ -78,7 +78,7 @@ export default function Dropdown(props) {
     prevOpen.current = open;
   }, [open]);
 
-  if(props.type === "School"){
+  if(props.type === "CompSci"){
   	return (
     <div className={classes.root}>
       <div>
@@ -90,7 +90,7 @@ export default function Dropdown(props) {
           align="center"
           className={classes.NavText}
         >
-          School
+          Computer Science
         </Button>
         <Popper open={open} anchorEl={anchorRef.current} role={undefined} transition>
           {({ TransitionProps, placement }) => (
@@ -102,9 +102,8 @@ export default function Dropdown(props) {
                 <ClickAwayListener onClickAway={handleClose}>
                   <MenuList autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
                     <MenuItem className={classes.NavButton} onClick={handleClose} to="/compiler" component={Link}>Compiler</MenuItem>
-                    <MenuItem className={classes.NavButton} onClick={handleClose} to="/duck-animation" component={Link}>Rubber Duck Animation</MenuItem>
-                    <MenuItem className={classes.NavButton} onClick={handleClose} to="/web-server" component={Link}>Web Server</MenuItem>
-                    <MenuItem className={classes.NavButton} onClick={handleClose} to="/nd-football-db" component={Link}>ND Football Database</MenuItem>
+                    <MenuItem className={classes.NavButton} onClick={handleClose} to="/mini-shell" component={Link}>Mini Shell</MenuItem>
+                    <MenuItem className={classes.NavButton} onClick={handleClose} to="/sudoku-solver" component={Link}>Soduku Solver</MenuItem>
                   </MenuList>
                 </ClickAwayListener>
               </Paper>
@@ -126,7 +125,7 @@ export default function Dropdown(props) {
           align="center"
           className={classes.NavText}
         >
-          Independent
+          Modeling and Animation
         </Button>
         <Popper open={open} anchorEl={anchorRef.current} role={undefined} transition>
           {({ TransitionProps, placement }) => (
@@ -137,9 +136,7 @@ export default function Dropdown(props) {
               <Paper>
                 <ClickAwayListener onClickAway={handleClose}>
                   <MenuList className={classes.NavList} autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
-                    <MenuItem className={classes.NavButton} onClick={handleClose} to="/mini-shell" component={Link}>Mini Shell</MenuItem>
-                    <MenuItem className={classes.NavButton} onClick={handleClose} to="/soduku-solver" component={Link}>Soduku Solver</MenuItem>
-                    <MenuItem className={classes.NavButton} onClick={handleClose} to="/algorithms" component={Link}>Algorithms</MenuItem>
+                    <MenuItem className={classes.NavButton} onClick={handleClose} to="/duck-animation" component={Link}>Rubber Duck Animation</MenuItem>
                   </MenuList>
                 </ClickAwayListener>
               </Paper>
