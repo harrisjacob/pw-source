@@ -2,14 +2,10 @@ import './App.css';
 import React from 'react';
 import { HashRouter as Router, Switch, Route} from "react-router-dom";
 import Home from './components/general/Home';
-import Compiler from './components/school/Compiler';
-import DuckAnimation from './components/school/DuckAnimation';
-import NdFootballDatabase from './components/school/NdFootballDatabase';
-import WebServer from './components/school/WebServer';
-import Algorithms from './components/independent/Algorithms';
-import MiniShell from './components/independent/MiniShell';
-import SudokuSolver from './components/independent/SudokuSolver';
-import About from './components/general/About';
+import Compiler from './components/CS/Compiler';
+import DuckAnimation from './components/Animation/DuckAnimation';
+import MiniShell from './components/CS/MiniShell';
+import SudokuSolver from './components/CS/SudokuSolver';
 import { makeStyles, ThemeProvider} from '@material-ui/core/styles';
 import theme from "./theme.js"
 import Grid from "@material-ui/core/Grid";
@@ -62,12 +58,8 @@ export default function App() {
 		            <Switch>
 						<Route exact path="/compiler" component={Compiler} />
 						<Route exact path="/duck-animation" component={DuckAnimation} />						
-						<Route exact path="/nd-football-db" component={NdFootballDatabase} />
-						<Route exact path="/web-server" component={WebServer} />
 						<Route exact path="/sudoku-solver" component={SudokuSolver} />
-						<Route exact path="/algorithms" component={Algorithms} />
 						<Route exact path="/mini-shell" component={MiniShell} />
-						<Route exact path="/about" component={About} />
 			            <Route exact path="/" component={Home} />
 		            </Switch>
 				</div>
