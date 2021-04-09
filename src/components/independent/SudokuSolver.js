@@ -42,20 +42,20 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-export default function SodukuSolver(){
+export default function SudokuSolver(){
 
 	const classes = useStyles();
 	const commonStyle = contentStyle();
 
 	return(
 			<div>
-				<Typography variant="h2"className={commonStyle.ProjectTitle}>Soduku Solver</Typography>
+				<Typography variant="h2"className={commonStyle.ProjectTitle}>Sudoku Solver</Typography>
 				<Grid container spacing={10} className={commonStyle.projStages}>
 					<Grid item xs={12} className={commonStyle.Section}>
 						<Typography variant="h3" color="textSecondary" className={commonStyle.SubTitle}>Overview</Typography>
 						<Typography color="textPrimary" className={commonStyle.bodyText}>Since I was a kid, I have always enjoyed logic based riddles and games such as the Sudoku.  Although I’d like to think that I have enough experience to tackle any difficulty of these puzzles, every once in a while I’ll come across a Sudoku that I can’t seem to make any progress. The goal of this project is to create a Sudoku solver that takes user input via a GUI and will return a solution, if one exists.  I chose to do this project in Python mainly because I wanted to experiment with the PyGame modules.</Typography>
 						<div className={commonStyle.MasterButtonContainer}>
-							<GithubButton link="https://github.com/harrisjacob/Sudoku" text="Soduku Solver"/>
+							<GithubButton link="https://github.com/harrisjacob/Sudoku" text="Sudoku Solver"/>
 						</div>
 					</Grid>
 					
@@ -96,7 +96,7 @@ export default function SodukuSolver(){
 							<Grid item xs={12} md={4}>
 								<div className={classes.playerWrapper}>
 									<ReactPlayer 
-										url='./dynamic/Sudoku_UTH.mp4' 
+										url='./dynamic/Sudoku Uth-1.m4v' 
 										muted={true} 
 										playing={true} 
 										loop={true} 
@@ -105,7 +105,6 @@ export default function SodukuSolver(){
 										className={classes.reactPlayer}/>
 								</div>
 							</Grid>
-
 						</Grid>
 					</Grid>
 				</Grid>
