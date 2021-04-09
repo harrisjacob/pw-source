@@ -8,7 +8,7 @@ import NdFootballDatabase from './components/school/NdFootballDatabase';
 import WebServer from './components/school/WebServer';
 import Algorithms from './components/independent/Algorithms';
 import MiniShell from './components/independent/MiniShell';
-import SodukuSolver from './components/independent/SodukuSolver';
+import SudokuSolver from './components/independent/SudokuSolver';
 import About from './components/general/About';
 import { makeStyles, ThemeProvider} from '@material-ui/core/styles';
 import theme from "./theme.js"
@@ -64,7 +64,7 @@ export default function App() {
 						<Route exact path="/duck-animation" component={DuckAnimation} />						
 						<Route exact path="/nd-football-db" component={NdFootballDatabase} />
 						<Route exact path="/web-server" component={WebServer} />
-						<Route exact path="/soduku-solver" component={SodukuSolver} />
+						<Route exact path="/sudoku-solver" component={SudokuSolver} />
 						<Route exact path="/algorithms" component={Algorithms} />
 						<Route exact path="/mini-shell" component={MiniShell} />
 						<Route exact path="/about" component={About} />
