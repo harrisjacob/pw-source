@@ -9,7 +9,16 @@ import ComingSoon from '../subcomponents/ComingSoon';
 
 
 const useStyles = makeStyles((theme) => ({
-
+	imgFormat:{
+		maxWidth:'100%',
+	},
+	MainImgContainer:{
+		width: '60%',
+		marginLeft: 'auto',
+		marginRight: 'auto',
+		marginBottom: '2%',
+		marginTop: '2%',
+	},
 }));
 
 
@@ -21,7 +30,26 @@ export default function CoronaBottle(){
 
 	return(
 			<div>
-				<ComingSoon />
+				<Typography variant="h2"className={commonStyle.ProjectTitle}>Corona Bottle</Typography>
+				
+				<div className={classes.MainImgContainer}>
+					<img src={process.env.PUBLIC_URL+ "/images/CoronaRender1080p.jpg"} alt="CoronaRender" className={classes.imgFormat}/>
+				</div>
+				<Grid container spacing={10} className={commonStyle.projStages}>
+					<Grid item xs={12} className={commonStyle.Section}>
+						<Typography variant="h3" color="textSecondary" className={commonStyle.SubTitle}>Overview</Typography>
+						<Typography color="textPrimary" className={commonStyle.bodyText}>Course: Technical Concepts of Visual Effects</Typography>
+						<Typography color="textPrimary" className={commonStyle.bodyText}>Professor: John Slaughter</Typography>
+						<Typography color="textPrimary" className={commonStyle.bodyText}>Taken: Spring 2021</Typography>
+						<br />
+						<Typography color="textPrimary" className={commonStyle.bodyText}>
+							The goal of this project was to model and render a drink of our choosing.  I decided to use bottled Corona as my inspiration because it provided an appropriate level of difficulty given the project's time frame and has always reminded me of the beaches back home.  Although its contribution to the scene is small, the bottle cap took by far the longest to model as I wanted to try to reproduce the ridges and teeth as close to the source as I could. All models used in this render are original.  The Corona logo, lime texture, wood texture, and HDRI were sourced from various free-use locations online. 
+						</Typography>
+					</Grid>
+				</Grid>
+				<div className={classes.MainImgContainer}>
+					<img src={process.env.PUBLIC_URL+ "/images/CoronaCapFront1080p.jpg"} alt="CapRender" className={classes.imgFormat}/>
+				</div>
 			</div>
 	);
 }
