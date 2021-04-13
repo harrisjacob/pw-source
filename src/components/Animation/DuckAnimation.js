@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
 	playerWrapper: {
 		position: 'relative',
 		paddingTop: '56.25%',
-		marginTop: '5%',
+		marginTop: '2%',
 		height: "56.25"
 	},
 	reactPlayer: {
