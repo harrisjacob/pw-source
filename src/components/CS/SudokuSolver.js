@@ -65,7 +65,7 @@ export default function SudokuSolver(){
 							<Grid item xs={12} md={4}>
 								<div className={classes.playerWrapper}>
 									<ReactPlayer 
-										url='./dynamic/Sudoku_Demo.mp4' 
+										url='./dynamic/Sudoku_Demo.m4v' 
 										muted={true} 
 										playing={true} 
 										loop={true} 
@@ -96,7 +96,7 @@ export default function SudokuSolver(){
 							<Grid item xs={12} md={4}>
 								<div className={classes.playerWrapper}>
 									<ReactPlayer 
-										url='./dynamic/Sudoku Uth-1.m4v' 
+										url='./dynamic/Sudoku_UTH.m4v'
 										muted={true} 
 										playing={true} 
 										loop={true} 
