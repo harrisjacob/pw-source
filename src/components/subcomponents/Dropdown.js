@@ -138,7 +138,7 @@ export default function Dropdown(props) {
                   <MenuList className={classes.NavList} autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
                     <MenuItem className={classes.NavButton} onClick={handleClose} to="/duck-animation" component={Link}>Rubber Duck Animation</MenuItem>
                     <MenuItem className={classes.NavButton} onClick={handleClose} to="/corona-bottle" component={Link}>Corona Bottle</MenuItem>
-                    <MenuItem className={classes.NavButton} onClick={handleClose} to="/luxo-animation" component={Link}>Luxo Animation</MenuItem>
+                    <MenuItem className={classes.NavButton} onClick={handleClose} to="/luxo-animation" component={Link}>Luxo Jr Animation</MenuItem>
                     <MenuItem className={classes.NavButton} onClick={handleClose} to="/alien-pulse-rifle" component={Link}>Alien: Pulse Rifle</MenuItem>
                     <MenuItem className={classes.NavButton} onClick={handleClose} to="/character-model" component={Link}>Character Model</MenuItem>
                   </MenuList>
