@@ -6,7 +6,9 @@ import Home from './components/general/Home';
 import Compiler from './components/CS/Compiler';
 import MiniShell from './components/CS/MiniShell';
 import SudokuSolver from './components/CS/SudokuSolver';
+import DemoPage from './components/CS/DemoPage';
 
+import Skyhook from './components/Animation/Skyhook';
 import DuckAnimation from './components/Animation/DuckAnimation';
 import LuxoAnimation from './components/Animation/LuxoAnimation';
 import PulseRifle from './components/Animation/PulseRifle';
@@ -71,6 +73,8 @@ export default function App() {
 						<Route exact path="/alien-pulse-rifle" component={PulseRifle} />
 						<Route exact path="/character-model" component={CharacterModel} />
 						<Route exact path="/corona-bottle" component={CoronaBottle} />
+						<Route exact path="/skyhook" component={Skyhook} />
+						<Route exact path="/demo-page" component={DemoPage} />
 			            <Route exact path="/" component={Home} />
 		            </Switch>
 				</div>
