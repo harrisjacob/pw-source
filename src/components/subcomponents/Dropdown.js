@@ -90,7 +90,7 @@ export default function Dropdown(props) {
           align="center"
           className={classes.NavText}
         >
-          Computer Science
+          Tools and Software Development
         </Button>
         <Popper open={open} anchorEl={anchorRef.current} role={undefined} transition>
           {({ TransitionProps, placement }) => (
