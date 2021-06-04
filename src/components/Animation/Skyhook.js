@@ -200,23 +200,26 @@ export default function Skyhook(){
 						<Typography variant="h3" color="textSecondary" className={commonStyle.SubTitle}>Maya</Typography>
 						<br />
 						<Grid container spacing={10} className={classes.introCont}>
-							<Grid item xs={7}>
+							<Grid item xs={6}>
 								<Typography color="textPrimary" className={commonStyle.bodyText}>
 								
 								</Typography>
 							</Grid>
-							<Grid item xs={5}>
+							<Grid item xs={6}>
 								<ImageGallery items={smoothedImages} originalWidth="100%"/>
 							</Grid>
 
 						</Grid>
 					</Grid>
 
+					<Grid item xs={12} className={commonStyle.Section}>
+						<div className={classes.imageGalleryContainer}>
+							<ImageGallery items={images}/>
+						</div>
+					</Grid>
 
 				</Grid>
-				<div className={classes.imageGalleryContainer}>
-					<ImageGallery items={images}/>
-				</div>
+
 			</div>
 	);
 }
