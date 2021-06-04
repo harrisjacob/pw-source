@@ -202,22 +202,34 @@ export default function Skyhook(){
 						<Grid container spacing={10} className={classes.introCont}>
 							<Grid item xs={6}>
 								<Typography color="textPrimary" className={commonStyle.bodyText}>
-								
+								Maya was first used to block out the overall geometry of the Skyhook.  My reference images were fairly consistent in their proportions and detail, so I was able to model using each of the orthographic views.  For details hidden from these views, Bioshock Infinite concept art, fan art, and captures from the game itself were explored.  One approach to modelling that I picked up in my 3D digital production classes is to visualize how the system of components would actually function if it were implemented in real life.  Using this method, I was able to model each piece based on how I believed that piece was utilized in the Skyhook’s design.
 								</Typography>
 							</Grid>
 							<Grid item xs={6}>
-								<ImageGallery items={smoothedImages} originalWidth="100%"/>
+								<ImageGallery items={smoothedImages}/>
 							</Grid>
 
 						</Grid>
 					</Grid>
 
 					<Grid item xs={12} className={commonStyle.Section}>
-						<div className={classes.imageGalleryContainer}>
-							<ImageGallery items={images}/>
-						</div>
+						<Typography variant="h3" color="textSecondary"  align="right" className={commonStyle.SubTitle}>Mudbox</Typography>
+						<br />
+					
+						<Grid container spacing={10} className={classes.introCont}>
+							<Grid item xs={12}>
+								<Typography color="textPrimary" className={commonStyle.bodyText}>
+								The model was brought into Mudbox for texture painting and fine detail sculpting.  Texture painting used images for the wood, metal, and leather surfaces as well as basic colors such as those used on the strap stitching.  Using Mudbox’s sculpting tools allowed for some of the smaller details including the metal scratches, raised stitches, grip design and decoration, and wooden granularity to be created.  Highlights were added to the scratches in the metal to reduce their subtly and give the impression of an exposed subsurface in the metal. A combination of stamps sourced from reference images and files I created in Photoshop were used for these details as well as the engravings and reliefs that decorate the weapon.
+								</Typography>
+							</Grid>
+							<Grid item xs={12} className={commonStyle.Section}>
+								<div className={classes.imageGalleryContainer}>
+									<ImageGallery items={images}/>
+								</div>
+							</Grid>
+						</Grid>
+					
 					</Grid>
-
 				</Grid>
 
 			</div>
