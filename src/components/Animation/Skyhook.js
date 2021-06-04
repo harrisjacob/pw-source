@@ -16,6 +16,13 @@ const useStyles = makeStyles((theme) => ({
 		paddingRight: "5px",
 		paddingLeft: "5px",
 		backgroundColor : theme.palette.text.secondary,
+		
+		[theme.breakpoints.only('md')]: {
+			width:"70%",
+			height: "auto",
+			marginLeft: "auto",
+			marginRight: "auto",
+    	},
 	},
 	introCont:{
 		alignItems:"center",
@@ -47,11 +54,20 @@ const useStyles = makeStyles((theme) => ({
 		backgroundColor : "white",
 	},
 	mayaGallery: {
+		width:"100%",
 		paddingTop: "5px",
 		paddingBottom: "5px",
 		paddingRight: "5px",
 		paddingLeft: "5px",
 		backgroundColor : theme.palette.text.secondary,
+
+		[theme.breakpoints.down('md')]: {
+			width:"60%",
+			height: "auto",
+			marginLeft: "auto",
+			marginRight: "auto",
+    	},
+
 	},
 	mudboxGallery: {
 		width:"60%",
@@ -66,6 +82,9 @@ const useStyles = makeStyles((theme) => ({
 	},
 	imgCaption:{
 		textAlign: "center",
+	},
+	policeImg:{
+		textAlign:"center",
 	},
 }));
 
@@ -204,8 +223,8 @@ export default function Skyhook(){
 						<Typography variant="h3" color="textSecondary" align="right" className={commonStyle.SubTitle}>Background</Typography>
 						<br />
 						<Grid container spacing={10} className={classes.introCont}>
-							<Grid conatiner item xs={4}>
-								<Grid item xs={12}>
+							<Grid conatiner item lg={4} xs={12}>
+								<Grid item xs={12} className={classes.policeImg}>
 									<img src="https://i.ibb.co/B2Rkbcz/police-skyhook.png" alt="police-skyhook" className={classes.skyHook}/>
 								</Grid>
 								<Grid item xs={12} className={classes.imgCaption}>
@@ -214,7 +233,7 @@ export default function Skyhook(){
 									</Typography>
 								</Grid>
 							</Grid>
-							<Grid item xs={8}>
+							<Grid item lg={8} xs={12}>
 								<Typography color="textPrimary" className={commonStyle.bodyText}>
 								In Bioshock Infinite, the Skyhook is a tool used by the player (and NPCs) to move between the floating islands of Colombia. The curved hooks allow the player to latch onto the Sky-Lines for quick travel around an island during a chapter or to take the player to a new island as the story progresses. The Skyhook is also the first weapon (and only melee weapon) given to the player throughout the game.  Its mode of attack is dependent on the player’s position relative to their target.  Pulling the trigger causes the rotary motor to spin the bladed scoops ensuring that the player catches a rail or performs a gory execution. For more information visit the&nbsp;
 								<a href="https://bioshock.fandom.com/wiki/Sky-Hook">Skyhook Wiki page</a>
@@ -230,12 +249,12 @@ export default function Skyhook(){
 						<Typography variant="h3" color="textSecondary" className={commonStyle.SubTitle}>Maya</Typography>
 						<br />
 						<Grid container spacing={10} className={classes.introCont}>
-							<Grid item xs={6}>
+							<Grid item lg={6} xs={12}>
 								<Typography color="textPrimary" className={commonStyle.bodyText}>
 								Maya was first used to block out the overall geometry of the Skyhook.  My reference images were fairly consistent in their proportions and detail, so I was able to model using each of the orthographic views.  For details hidden from these views, Bioshock Infinite concept art, fan art, and captures from the game itself were explored.  One approach to modelling that I picked up in my 3D digital production classes is to visualize how the system of components would actually function if it were implemented in real life.  Using this method, I was able to model each piece based on how I believed that piece was utilized in the Skyhook’s design.
 								</Typography>
 							</Grid>
-							<Grid item xs={6}>
+							<Grid item lg={6} xs={12}>
 								<div className={classes.mayaGallery}>
 									<div className={classes.imageGalleryContainer}>
 										<ImageGallery items={smoothedImages} className={classes.mayaGallery}/>
