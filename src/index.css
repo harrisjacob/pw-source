@@ -54,12 +54,6 @@ html, body {
 ::-webkit-scrollbar {display:none;}
 
 @import "~react-image-gallery/styles/css/image-gallery.css";
-.image-gallery{
-	width: 60%;
-	height: auto;
-	margin-left: auto;
-	margin-right: auto;
-}
 
 .image-gallery-left-nav {
   transform: scale(0.5) translateY(-100%);

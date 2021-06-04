@@ -34,7 +34,12 @@ const useStyles = makeStyles((theme) => ({
 	contentStart:{
 		marginTop: "-20%",
 	},
-
+	imageGalleryContainer: {
+		width:"60%",
+		height: "auto",
+		marginLeft: "auto",
+		marginRight: "auto",
+	},
 }));
 
 
@@ -43,6 +48,36 @@ export default function Skyhook(){
 	const classes = useStyles();
 	const commonStyle = contentStyle();
 
+	const smoothedImages = [
+		{
+			original: 'https://i.ibb.co/m4TVGd2/smooth01.jpg',
+			thumbnail: 'https://i.ibb.co/m4TVGd2/smooth01.jpg',
+		},
+		{
+			original: 'https://i.ibb.co/HDKWrm9/smooth02.jpg',
+			thumbnail: 'https://i.ibb.co/HDKWrm9/smooth02.jpg',
+		},
+		{
+			original: 'https://i.ibb.co/gwDGRpM/smooth03.jpg',
+			thumbnail: 'https://i.ibb.co/gwDGRpM/smooth03.jpg',
+		},
+		{
+			original: 'https://i.ibb.co/R0p4Cp8/smooth04.jpg',
+			thumbnail: 'https://i.ibb.co/R0p4Cp8/smooth04.jpg',
+		},
+		{
+			original: 'https://i.ibb.co/QNhrnk3/smooth-Front.jpg',
+			thumbnail: 'https://i.ibb.co/QNhrnk3/smooth-Front.jpg',
+		},
+		{
+			original: 'https://i.ibb.co/wLS07RK/smooth-Top.jpg',
+			thumbnail: 'https://i.ibb.co/wLS07RK/smooth-Top.jpg',
+		},
+		{
+			original: 'https://i.ibb.co/ts0GxvD/smooth-Side.jpg',
+			thumbnail: 'https://i.ibb.co/ts0GxvD/smooth-Side.jpg',
+		},
+	];
 
 	const images = [
   		{
@@ -139,9 +174,12 @@ export default function Skyhook(){
 					</Grid>
 
 					<Grid item xs={12} className={commonStyle.Section}>
-						<Typography variant="h3" color="textSecondary" className={commonStyle.SubTitle}>Background</Typography>
+						<Typography variant="h3" color="textSecondary" align="right" className={commonStyle.SubTitle}>Background</Typography>
 						<br />
 						<Grid container spacing={10} className={classes.introCont}>
+							<Grid item xs={4}>
+								<img src="https://i.ibb.co/B2Rkbcz/police-skyhook.png" alt="police-skyhook" className={classes.skyHook}/>
+							</Grid>
 							<Grid item xs={8}>
 								<Typography color="textPrimary" className={commonStyle.bodyText}>
 								In Bioshock Infinite, the Skyhook is a tool used by the player (and NPCs) to move between the floating islands of Colombia. The curved hooks allow the player to latch onto the Sky-Rails for quick travel around an island during a chapter or to take the player to a new island as the story progresses. The Skyhook is also the first weapon (and only melee weapon) given to the player throughout the game.  Its mode of attack is dependent on the player’s position relative to their target.  Pulling the trigger causes the rotary motor to spin the bladed scoops ensuring that the player catches a rail or performs a gory execution. For more information visit the&nbsp;
@@ -149,15 +187,31 @@ export default function Skyhook(){
 								.
 								</Typography>
 							</Grid>
-							<Grid item xs={4}>
-								<img src="https://i.ibb.co/B2Rkbcz/police-skyhook.png" alt="police-skyhook" className={classes.skyHook}/>
-							</Grid>
 						</Grid>
 					</Grid>
 
-				</Grid>
 
-				<ImageGallery items={images} />
+					<Grid item xs={12} className={commonStyle.Section}>
+						<Typography variant="h3" color="textSecondary" className={commonStyle.SubTitle}>Maya</Typography>
+						<br />
+						<Grid container spacing={10} className={classes.introCont}>
+							<Grid item xs={7}>
+								<Typography color="textPrimary" className={commonStyle.bodyText}>
+								
+								</Typography>
+							</Grid>
+							<Grid item xs={5}>
+								<ImageGallery items={smoothedImages} originalWidth="100%"/>
+							</Grid>
+
+						</Grid>
+					</Grid>
+
+
+				</Grid>
+				<div className={classes.imageGalleryContainer}>
+					<ImageGallery items={images}/>
+				</div>
 			</div>
 	);
 }
