@@ -108,66 +108,66 @@ export default function Skyhook(){
 
 	const images = [
   		{
-    		original: './images/Skyhook/Orthos/Front_B.png',
-    		thumbnail: './images/Skyhook/Orthos/Front_B.png',
+    		original: 'https://i.ibb.co/Gp5mtrs/Front-B.png',
+    		thumbnail: 'https://i.ibb.co/Gp5mtrs/Front-B.png',
   		},
   		{
-    		original: './images/Skyhook/Orthos/Back_B.png',
-    		thumbnail: './images/Skyhook/Orthos/Back_B.png',
+    		original: 'https://i.ibb.co/b1Cxhvk/Back-B.png',
+    		thumbnail: 'https://i.ibb.co/b1Cxhvk/Back-B.png',
   		},
   		{
-    		original: './images/Skyhook/Orthos/Top_B.png',
-    		thumbnail: './images/Skyhook/Orthos/Top_B.png',
+    		original: 'https://i.ibb.co/5MWmz5Q/Top-B.png',
+    		thumbnail: 'https://i.ibb.co/5MWmz5Q/Top-B.png',
   		},
   		{
-    		original: './images/Skyhook/Orthos/Bottom_B.png',
-    		thumbnail: './images/Skyhook/Orthos/Bottom_B.png',
+    		original: 'https://i.ibb.co/SXT6T79/Bottom-B.png',
+    		thumbnail: 'https://i.ibb.co/SXT6T79/Bottom-B.png',
   		},
   		{
-    		original: './images/Skyhook/Orthos/Left_B.png',
-    		thumbnail: './images/Skyhook/Orthos/Left_B.png',
+    		original: 'https://i.ibb.co/q05Jj3q/Left-B.png',
+    		thumbnail: 'https://i.ibb.co/q05Jj3q/Left-B.png',
   		},
   		{
-    		original: './images/Skyhook/Orthos/Right_B.png',
-    		thumbnail: './images/Skyhook/Orthos/Right_B.png',
+    		original: 'https://i.ibb.co/569YpLQ/Right-B.png',
+    		thumbnail: 'https://i.ibb.co/569YpLQ/Right-B.png',
   		},
 
 
   		{
-    		original: './images/Skyhook/Mud_Details/Bottom_Engraving.png',
-    		thumbnail: './images/Skyhook/Mud_Details/Bottom_Engraving.png',
+    		original: 'https://i.ibb.co/mF2rhLZ/Bottom-Engraving.png',
+    		thumbnail: 'https://i.ibb.co/mF2rhLZ/Bottom-Engraving.png',
   		},
   		{
-    		original: './images/Skyhook/Mud_Details/Case_Closeup.png',
-    		thumbnail: './images/Skyhook/Mud_Details/Case_Closeup.png',
+    		original: 'https://i.ibb.co/D7yRjVW/Case-Closeup.png',
+    		thumbnail: 'https://i.ibb.co/D7yRjVW/Case-Closeup.png',
   		},
   		{
-    		original: './images/Skyhook/Mud_Details/Claw_02.png',
-    		thumbnail: './images/Skyhook/Mud_Details/Claw_02.png',
+    		original: 'https://i.ibb.co/FsvmRGT/Claw-02.png',
+    		thumbnail: 'https://i.ibb.co/FsvmRGT/Claw-02.png',
   		},
   		{
-    		original: './images/Skyhook/Mud_Details/Claw_01.png',
-    		thumbnail: './images/Skyhook/Mud_Details/Claw_01.png',
+    		original: 'https://i.ibb.co/4ZnNmhS/Claw-01.png',
+    		thumbnail: 'https://i.ibb.co/4ZnNmhS/Claw-01.png',
   		},
   		{
-    		original: './images/Skyhook/Mud_Details/GrainOfTheWood.png',
-    		thumbnail: './images/Skyhook/Mud_Details/GrainOfTheWood.png',
+    		original: 'https://i.ibb.co/Rztk8LS/Grain-Of-The-Wood.png',
+    		thumbnail: 'https://i.ibb.co/Rztk8LS/Grain-Of-The-Wood.png',
   		},
   		{
-    		original: './images/Skyhook/Mud_Details/Handle_01.png',
-    		thumbnail: './images/Skyhook/Mud_Details/Handle_01.png',
+    		original: 'https://i.ibb.co/8r6dbp6/Handle-01.png',
+    		thumbnail: 'https://i.ibb.co/8r6dbp6/Handle-01.png',
   		},
   		{
-    		original: './images/Skyhook/Mud_Details/Leather.png',
-    		thumbnail: './images/Skyhook/Mud_Details/Leather.png',
+    		original: 'https://i.ibb.co/tD5Xq94/Leather.png',
+    		thumbnail: 'https://i.ibb.co/tD5Xq94/Leather.png',
   		},
   		{
-    		original: './images/Skyhook/Mud_Details/LogCut.png',
-    		thumbnail: './images/Skyhook/Mud_Details/LogCut.png',
+    		original: 'https://i.ibb.co/s288GyL/LogCut.png',
+    		thumbnail: 'https://i.ibb.co/s288GyL/LogCut.png',
   		},
   		{
-    		original: './images/Skyhook/Mud_Details/Upper_Logo.png',
-    		thumbnail: './images/Skyhook/Mud_Details/Upper_Logo.png',
+    		original: 'https://i.ibb.co/3sRcdWy/Upper-Logo.png',
+    		thumbnail: 'https://i.ibb.co/3sRcdWy/Upper-Logo.png',
   		},
 	];
 
