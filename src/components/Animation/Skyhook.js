@@ -11,6 +11,11 @@ const useStyles = makeStyles((theme) => ({
 
 	skyHook: {
 		width:"100%",
+		paddingTop: "5px",
+		paddingBottom: "5px",
+		paddingRight: "5px",
+		paddingLeft: "5px",
+		backgroundColor : theme.palette.text.secondary,
 	},
 	introCont:{
 		alignItems:"center",
@@ -39,10 +44,28 @@ const useStyles = makeStyles((theme) => ({
 		marginTop: "-20%",
 	},
 	imageGalleryContainer: {
+		backgroundColor : "white",
+	},
+	mayaGallery: {
+		paddingTop: "5px",
+		paddingBottom: "5px",
+		paddingRight: "5px",
+		paddingLeft: "5px",
+		backgroundColor : theme.palette.text.secondary,
+	},
+	mudboxGallery: {
 		width:"60%",
 		height: "auto",
 		marginLeft: "auto",
 		marginRight: "auto",
+		paddingTop: "5px",
+		paddingBottom: "5px",
+		paddingRight: "5px",
+		paddingLeft: "5px",
+		backgroundColor : theme.palette.text.secondary,
+	},
+	imgCaption:{
+		textAlign: "center",
 	},
 }));
 
@@ -181,12 +204,19 @@ export default function Skyhook(){
 						<Typography variant="h3" color="textSecondary" align="right" className={commonStyle.SubTitle}>Background</Typography>
 						<br />
 						<Grid container spacing={10} className={classes.introCont}>
-							<Grid item xs={4}>
-								<img src="https://i.ibb.co/B2Rkbcz/police-skyhook.png" alt="police-skyhook" className={classes.skyHook}/>
+							<Grid conatiner item xs={4}>
+								<Grid item xs={12}>
+									<img src="https://i.ibb.co/B2Rkbcz/police-skyhook.png" alt="police-skyhook" className={classes.skyHook}/>
+								</Grid>
+								<Grid item xs={12} className={classes.imgCaption}>
+									<Typography color="textPrimary" align="center" variant="caption">
+										Police using Skyhooks to ride the Sky-Lines, Bioshock Infinite
+									</Typography>
+								</Grid>
 							</Grid>
 							<Grid item xs={8}>
 								<Typography color="textPrimary" className={commonStyle.bodyText}>
-								In Bioshock Infinite, the Skyhook is a tool used by the player (and NPCs) to move between the floating islands of Colombia. The curved hooks allow the player to latch onto the Sky-Rails for quick travel around an island during a chapter or to take the player to a new island as the story progresses. The Skyhook is also the first weapon (and only melee weapon) given to the player throughout the game.  Its mode of attack is dependent on the player’s position relative to their target.  Pulling the trigger causes the rotary motor to spin the bladed scoops ensuring that the player catches a rail or performs a gory execution. For more information visit the&nbsp;
+								In Bioshock Infinite, the Skyhook is a tool used by the player (and NPCs) to move between the floating islands of Colombia. The curved hooks allow the player to latch onto the Sky-Lines for quick travel around an island during a chapter or to take the player to a new island as the story progresses. The Skyhook is also the first weapon (and only melee weapon) given to the player throughout the game.  Its mode of attack is dependent on the player’s position relative to their target.  Pulling the trigger causes the rotary motor to spin the bladed scoops ensuring that the player catches a rail or performs a gory execution. For more information visit the&nbsp;
 								<a href="https://bioshock.fandom.com/wiki/Sky-Hook">Skyhook Wiki page</a>
 								.
 								</Typography>
@@ -206,7 +236,11 @@ export default function Skyhook(){
 								</Typography>
 							</Grid>
 							<Grid item xs={6}>
-								<ImageGallery items={smoothedImages}/>
+								<div className={classes.mayaGallery}>
+									<div className={classes.imageGalleryContainer}>
+										<ImageGallery items={smoothedImages} className={classes.mayaGallery}/>
+									</div>
+								</div>
 							</Grid>
 
 						</Grid>
@@ -223,8 +257,10 @@ export default function Skyhook(){
 								</Typography>
 							</Grid>
 							<Grid item xs={12} className={commonStyle.Section}>
-								<div className={classes.imageGalleryContainer}>
-									<ImageGallery items={images}/>
+								<div className={classes.mudboxGallery}>
+									<div className={classes.imageGalleryContainer}>
+										<ImageGallery items={images}/>
+									</div>
 								</div>
 							</Grid>
 						</Grid>
