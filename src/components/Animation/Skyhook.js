@@ -29,7 +29,11 @@ const useStyles = makeStyles((theme) => ({
 		marginLeft: 'auto',
 		marginRight: 'auto',
 		textAlign: 'center',
-
+		paddingTop: "5px",
+		paddingBottom: "5px",
+		paddingRight: "5px",
+		paddingLeft: "5px",
+		backgroundColor : theme.palette.text.secondary,
 	}, 
 	contentStart:{
 		marginTop: "-20%",
@@ -187,6 +191,7 @@ export default function Skyhook(){
 								.
 								</Typography>
 							</Grid>
+
 						</Grid>
 					</Grid>
 
