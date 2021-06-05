@@ -70,8 +70,6 @@ export default function App() {
 						<Route exact path="/sudoku-solver" component={SudokuSolver} />
 						<Route exact path="/mini-shell" component={MiniShell} />
 						<Route exact path="/luxo-animation" component={LuxoAnimation} />
-						<Route exact path="/alien-pulse-rifle" component={PulseRifle} />
-						<Route exact path="/character-model" component={CharacterModel} />
 						<Route exact path="/corona-bottle" component={CoronaBottle} />
 						<Route exact path="/skyhook" component={Skyhook} />
 						<Route exact path="/demo-page" component={DemoPage} />
