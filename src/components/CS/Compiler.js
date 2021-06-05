@@ -87,7 +87,7 @@ export default function Compiler(){
 				
 				<Grid item xs={12} className={commonStyle.Section}>
 					<Typography variant="h3" color="textSecondary" className={commonStyle.SubTitle}>Code Generation</Typography>
-					<Typography variant="body1" color="textPrimary" className={commonStyle.bodyText}>Due to COVID-19 semester rescheduling, the code generation unit was pushed until after the Fall 2020 semester had finished and would be offered as an optional unit in January 2021.  Therefore, the section will be updated as soon as the code is completed.</Typography>
+					<Typography variant="body1" color="textPrimary" className={commonStyle.bodyText}>The final stage of the compiler is code generation. In this stage the B-minor code, having been type checked, is used to produce a 64-bit x86 assembly language program.  This program can be assembled, linked, and run.</Typography>
 				</Grid>
 
 				<Grid item xs={12} className={commonStyle.Section}>
