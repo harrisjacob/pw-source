@@ -101,6 +101,7 @@ export default function Dropdown(props) {
               <Paper>
                 <ClickAwayListener onClickAway={handleClose}>
                   <MenuList autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
+                    <MenuItem className={classes.NavButton} onClick={handleClose} to="/city-generator" component={Link}>Maya City Generator</MenuItem>
                     <MenuItem className={classes.NavButton} onClick={handleClose} to="/compiler" component={Link}>Compiler</MenuItem>
                     <MenuItem className={classes.NavButton} onClick={handleClose} to="/mini-shell" component={Link}>Mini Shell</MenuItem>
                     <MenuItem className={classes.NavButton} onClick={handleClose} to="/sudoku-solver" component={Link}>Soduku Solver</MenuItem>

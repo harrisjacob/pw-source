@@ -3,6 +3,7 @@ import React from 'react';
 import { HashRouter as Router, Switch, Route} from "react-router-dom";
 
 import Home from './components/general/Home';
+import CityGenerator from './components/CS/CityGenerator';
 import Compiler from './components/CS/Compiler';
 import MiniShell from './components/CS/MiniShell';
 import SudokuSolver from './components/CS/SudokuSolver';
@@ -73,6 +74,7 @@ export default function App() {
 						<Route exact path="/corona-bottle" component={CoronaBottle} />
 						<Route exact path="/skyhook" component={Skyhook} />
 						<Route exact path="/demo-page" component={DemoPage} />
+						<Route exact path="/city-generator" component={CityGenerator}/>
 			            <Route exact path="/" component={Home} />
 		            </Switch>
 				</div>
