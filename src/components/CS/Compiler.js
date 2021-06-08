@@ -50,7 +50,7 @@ export default function Compiler(){
 				</Grid>
 				
 				<Grid item xs={12} className={commonStyle.Section}>
-					<Typography variant="h3" color="textSecondary" className={commonStyle.SubTitle}>Scanner</Typography>
+					<Typography variant="h3" color="textSecondary" align="right" className={commonStyle.SubTitle}>Scanner</Typography>
 					<Typography variant="body1" color="textPrimary" className={commonStyle.bodyText} >The first stage of the compiler uses Flex Scanner Generator to group together characters from a plain text input into a sequence of tokens.  This is accomplished by simulating a finite automata through regular expression matching.</Typography>
 					<div className={commonStyle.buttonGrid}>
 						<GithubButton link="https://github.com/harrisjacob/Compilers/tree/master/Scanner" text="Scanner Code"/>
@@ -68,7 +68,7 @@ export default function Compiler(){
 				</Grid>
 				
 				<Grid item xs={12} className={commonStyle.Section}>
-					<Typography variant="h3" color="textSecondary" className={commonStyle.SubTitle}>Pretty-Printer</Typography>
+					<Typography variant="h3" color="textSecondary" align="right" className={commonStyle.SubTitle}>Pretty-Printer</Typography>
 					<Typography variant="body1" color="textPrimary" className={commonStyle.bodyText}>The printer stage of the compiler uses the grammar rules of the parser to construct an abstract syntax tree (AST).  After it is constructed, the AST is traversed and the original B-minor input program is printed with consistent formatting.</Typography>
 					<div className={commonStyle.buttonGrid}>
 						<GithubButton link="https://github.com/harrisjacob/Compilers/tree/master/PrettyPrinter" text="Printer Code"/>
@@ -86,7 +86,7 @@ export default function Compiler(){
 				</Grid>
 				
 				<Grid item xs={12} className={commonStyle.Section}>
-					<Typography variant="h3" color="textSecondary" className={commonStyle.SubTitle}>Code Generation</Typography>
+					<Typography variant="h3" color="textSecondary" align="right" className={commonStyle.SubTitle}>Code Generation</Typography>
 					<Typography variant="body1" color="textPrimary" className={commonStyle.bodyText}>The final stage of the compiler is code generation. In this stage the B-minor code, having been type checked, is used to produce a 64-bit x86 assembly language program.  This program can be assembled, linked, and run.</Typography>
 				</Grid>
 
