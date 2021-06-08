@@ -32,7 +32,7 @@ export default function Compiler(){
 	return(<div>
 			<Typography variant="h2"className={commonStyle.ProjectTitle}>B-Minor Compiler</Typography>
 			<div>
-				<img src={process.env.PUBLIC_URL+ "/images/compilerOverview.PNG"} alt="" className={classes.imgFormat}/>
+				<img src="https://i.ibb.co/YcngtKP/compiler-Overview.png" alt="compiler-Overview" border="0" className={classes.imgFormat}/>
 				<div className={classes.imgCaption}>[1]</div>
 			</div>
 			<Grid container spacing={10} className={commonStyle.projStages}>

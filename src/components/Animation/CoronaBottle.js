@@ -33,7 +33,7 @@ export default function CoronaBottle(){
 				<Typography variant="h2"className={commonStyle.ProjectTitle}>Corona Bottle</Typography>
 				
 				<div className={classes.MainImgContainer}>
-					<img src={process.env.PUBLIC_URL+ "/images/CoronaRender1080p.jpg"} alt="CoronaRender" className={classes.imgFormat}/>
+					<img src="https://i.ibb.co/z6QnP0S/Corona-Render1080p.jpg" alt="Corona-Render1080p" border="0" className={classes.imgFormat}/>
 				</div>
 				<Grid container spacing={10} className={commonStyle.projStages}>
 					<Grid item xs={12} className={commonStyle.Section}>
@@ -48,7 +48,7 @@ export default function CoronaBottle(){
 					</Grid>
 				</Grid>
 				<div className={classes.MainImgContainer}>
-					<img src={process.env.PUBLIC_URL+ "/images/CoronaCapFront1080p.jpg"} alt="CapRender" className={classes.imgFormat}/>
+					<img src="https://i.ibb.co/zFJ2f8P/Corona-Cap-Front1080p.jpg" alt="Corona-Cap-Front1080p" border="0" className={classes.imgFormat}/>
 				</div>
 			</div>
 	);

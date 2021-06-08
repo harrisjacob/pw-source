@@ -42,7 +42,7 @@ export default function LuxoAnimation(){
 				<Typography variant="h2" className={commonStyle.ProjectTitle}>Luxo Jr Animation</Typography>
 				<div className={classes.playerWrapper}>
 					<ReactPlayer
-						url='./dynamic/LuxoJr_Animation.m4v'
+						url='https://youtu.be/Kglru-SKyZE'
 						controls={true}
 						width='60%'
 						height='60%'
