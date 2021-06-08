@@ -2,22 +2,12 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import ComingSoon from '../subcomponents/ComingSoon';
-import ReactPlayer from "react-player";
 import contentStyle from "../subcomponents/contentStyle";
 import GithubButton from '../subcomponents/GithubButton';
 import Grid from "@material-ui/core/Grid";
 
 
 const useStyles = makeStyles((theme) => ({
-	playerWrapper: {
-		position: 'relative',
-		paddingTop: '100%',
-	},
-	reactPlayer: {
-		position: 'absolute',
-		top:0,
-		textAlign: 'center',
-	}, 
 	UthText: {
 		marginRight: '4%',
 		[theme.breakpoints.down('sm')]: {
@@ -63,16 +53,7 @@ export default function SudokuSolver(){
 						<Grid container spacing={0} className={classes.containerLayout}>
 							
 							<Grid item xs={12} md={4}>
-								<div className={classes.playerWrapper}>
-									<ReactPlayer 
-										url='./dynamic/Sudoku_Demo.m4v' 
-										muted={true} 
-										playing={true} 
-										loop={true} 
-										width="100%" 
-										height="100%"
-										className={classes.reactPlayer}/>
-								</div>
+								<img src="https://i.ibb.co/26wcTky/Sudoko-Demo.gif" alt="Sudoko-Demo" border="0" />
 							</Grid>
 
 
@@ -94,16 +75,7 @@ export default function SudokuSolver(){
 							</Grid>
 							
 							<Grid item xs={12} md={4}>
-								<div className={classes.playerWrapper}>
-									<ReactPlayer 
-										url='./dynamic/Sudoku_UTH.m4v'
-										muted={true} 
-										playing={true} 
-										loop={true} 
-										width="100%" 
-										height="100%"
-										className={classes.reactPlayer}/>
-								</div>
+								<img src="https://i.ibb.co/gSYpfND/Sudoko-UTH.gif" alt="Sudoko-UTH" border="0" />
 							</Grid>
 						</Grid>
 					</Grid>
