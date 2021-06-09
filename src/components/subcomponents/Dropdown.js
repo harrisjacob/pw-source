@@ -142,9 +142,8 @@ export default function Dropdown(props) {
                     <MenuItem className={classes.NavButton} onClick={handleClose} to="/luxo-animation" component={Link}>Luxo Jr Animation</MenuItem>
                     <MenuItem className={classes.NavButton} onClick={handleClose} to="/duck-animation" component={Link}>Rubber Duck Animation</MenuItem>
                     <MenuItem className={classes.NavButton} onClick={handleClose} to="/corona-bottle" component={Link}>Corona Bottle</MenuItem>
-                    
                   </MenuList>
-                </ClickAwayListener>/
+                </ClickAwayListener>
               </Paper>
             </Grow>
           )}
