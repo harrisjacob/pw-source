@@ -13,7 +13,7 @@ import Skyhook from './components/Animation/Skyhook';
 import DuckAnimation from './components/Animation/DuckAnimation';
 import LuxoAnimation from './components/Animation/LuxoAnimation';
 import PulseRifle from './components/Animation/PulseRifle';
-import CharacterModel from './components/Animation/CharacterModel';
+//import CharacterModel from './components/Animation/CharacterModel';
 import CoronaBottle from './components/Animation/CoronaBottle';
 
 import { makeStyles, ThemeProvider} from '@material-ui/core/styles';
@@ -74,7 +74,8 @@ export default function App() {
 						<Route exact path="/corona-bottle" component={CoronaBottle} />
 						<Route exact path="/skyhook" component={Skyhook} />
 						<Route exact path="/demo-page" component={DemoPage} />
-						<Route exact path="/city-generator" component={CityGenerator}/>
+						<Route exact path="/city-generator" component={CityGenerator} />
+						<Route exact path="/pulse-rifle" component={PulseRifle} />
 			            <Route exact path="/" component={Home} />
 		            </Switch>
 				</div>
