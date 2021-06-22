@@ -7,7 +7,6 @@ import CityGenerator from './components/CS/CityGenerator';
 import Compiler from './components/CS/Compiler';
 import MiniShell from './components/CS/MiniShell';
 import SudokuSolver from './components/CS/SudokuSolver';
-import DemoPage from './components/CS/DemoPage';
 
 import Skyhook from './components/Animation/Skyhook';
 import DuckAnimation from './components/Animation/DuckAnimation';
@@ -72,8 +71,7 @@ export default function App() {
 						<Route exact path="/mini-shell" component={MiniShell} />
 						<Route exact path="/luxo-animation" component={LuxoAnimation} />
 						<Route exact path="/corona-bottle" component={CoronaBottle} />
-						<Route exact path="/skyhook" component={Skyhook} />
-						<Route exact path="/demo-page" component={DemoPage} />
+						<Route exact path="/skyhook" component={Skyhook} />				
 						<Route exact path="/city-generator" component={CityGenerator} />
 						<Route exact path="/pulse-rifle" component={PulseRifle} />
 			            <Route exact path="/" component={Home} />
