@@ -220,7 +220,7 @@ export default function Skyhook(){
 					</Grid>
 
 					<Grid item xs={12} className={commonStyle.Section}>
-						<Typography variant="h3" color="textSecondary" align="right" className={commonStyle.SubTitle}>Background</Typography>
+						<Typography variant="h3" color="textSecondary" className={commonStyle.SubTitle}>Background</Typography>
 						<br />
 						<Grid container spacing={10} className={classes.introCont}>
 							<Grid conatiner item lg={4} xs={12}>
@@ -266,7 +266,7 @@ export default function Skyhook(){
 					</Grid>
 
 					<Grid item xs={12} className={commonStyle.Section}>
-						<Typography variant="h3" color="textSecondary"  align="right" className={commonStyle.SubTitle}>Mudbox</Typography>
+						<Typography variant="h3" color="textSecondary"  className={commonStyle.SubTitle}>Mudbox</Typography>
 						<br />
 					
 						<Grid container spacing={10} className={classes.introCont}>

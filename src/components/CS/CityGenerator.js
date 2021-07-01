@@ -58,7 +58,7 @@ export default function CityGenerator(){
 					</Grid>
 
 					<Grid item xs={12} className={commonStyle.Section}>
-						<Typography variant="h3" color="textSecondary" align="right" className={commonStyle.SubTitle}>Use</Typography>
+						<Typography variant="h3" color="textSecondary" className={commonStyle.SubTitle}>Use</Typography>
 						<Typography color="textPrimary" className={commonStyle.bodyText}>
 							The tool is divided into three main sections: transformation settings, attribute settings, and asset settings.  The transformation settings allow the user to move and rotate the block indicator (which signifies where the new city block will be built).  The snap to corner button allows the user to snap the indicator to the nearest city block corner.  This is accomplished by calculating the distance the indicator is from each existing corner in three dimensional space, then jumping to the corner corresponding to the smallest value found.  The remove existing blocks button will delete the building assets if the tool has been executed prior.
 						</Typography>
