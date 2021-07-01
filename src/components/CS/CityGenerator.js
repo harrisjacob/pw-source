@@ -49,7 +49,7 @@ export default function CityGenerator(){
 					<Grid item xs={12} className={commonStyle.Section}>
 						<Typography variant="h3" color="textSecondary" className={commonStyle.SubTitle}>Overview</Typography>
 						<Typography color="textPrimary" className={commonStyle.bodyText}>Course: Independent Study</Typography>
-						<Typography color="textPrimary" className={commonStyle.bodyText}>Advisor: Jeffery Spoonhower</Typography>
+						<Typography color="textPrimary" className={commonStyle.bodyText}>Advisor: Jeff Spoonhower</Typography>
 						<Typography color="textPrimary" className={commonStyle.bodyText}>Taken: Spring 2021</Typography>
 						<br />
 						<Typography color="textPrimary" className={commonStyle.bodyText} >

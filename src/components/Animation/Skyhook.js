@@ -211,7 +211,7 @@ export default function Skyhook(){
 					<Grid item xs={12} className={commonStyle.Section}>
 						<Typography variant="h3" color="textSecondary" className={commonStyle.SubTitle}>Overview</Typography>
 						<Typography color="textPrimary" className={commonStyle.bodyText}>Course: Advanced 3D Digital Production for Animation and Video Games</Typography>
-						<Typography color="textPrimary" className={commonStyle.bodyText}>Professor: Jeffery Spoonhower</Typography>
+						<Typography color="textPrimary" className={commonStyle.bodyText}>Professor: Jeff Spoonhower</Typography>
 						<Typography color="textPrimary" className={commonStyle.bodyText}>Taken: Spring 2021</Typography>
 						<br />
 						<Typography color="textPrimary" className={commonStyle.bodyText}>
