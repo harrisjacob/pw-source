@@ -32,7 +32,7 @@ export default function Footer(){
 	}
 
 	const linkdinProp = {
-		link: 'https://www.linkedin.com/in/jacob-harris-a2b462184/',
+		link: 'https://www.linkedin.com/in/harris-jake/',
 		logo: '/logos/LinkedIn.PNG',
 	}
 
