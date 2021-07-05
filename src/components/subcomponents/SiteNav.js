@@ -47,7 +47,7 @@ export default function SiteNav() {
 
 				<Grid item xs={2} align="center">
 					<Button>
-						<a href="./assets/Jacob_Harris_Resume.pdf" target="_blank" className={classes.ButtonLink}>
+						<a href="./assets/Jake Harris Resume.pdf" target="_blank" className={classes.ButtonLink}>
 							<Typography variant="button" display="block" className={classes.ButtonText}>
 								Resume
 							</Typography>
