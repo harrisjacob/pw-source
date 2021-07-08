@@ -13,6 +13,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
     justifyContent:"center",
+    alignSelf: "center",
   },
   paper: {
     marginRight: theme.spacing(2), 
@@ -23,6 +24,13 @@ const useStyles = makeStyles((theme) => ({
   NavText:{
     color: theme.palette.gray.main,
     fontFamily: 'Fjalla One, sansSerif',
+    alignSelf: "center",
+    [theme.breakpoints.down('sm')]: {
+      fontSize: "2vw",
+    },
+    [theme.breakpoints.up('xl')]: {
+      fontSize: "1vw"
+    },
   },
   NavButton:{
     color: theme.palette.gray.main,

@@ -16,9 +16,19 @@ const useStyles = makeStyles((theme) => ({
   ButtonText: {
   	color: theme.palette.gray.main,
   	fontFamily: 'Fjalla One, sansSerif',
+  	[theme.breakpoints.down('sm')]: {
+			fontSize: "2vw",
+    },
+    [theme.breakpoints.up('xl')]: {
+      fontSize: "1vw"
+    },
+    alignSelf: "center"
   },
   ButtonLink: {
   	textDecoration: "none",
+  },
+  buttonFormat: {
+  	 alignSelf: "center",
   },
 
 }));
@@ -30,7 +40,7 @@ export default function SiteNav() {
 	const classes = useStyles();
 
 	return (<Grid container spacing={3} justify="center" className={classes.NavForm}>
-				<Grid item xs={3} align="center">
+				<Grid item xs={3} align="center" className={classes.buttonFormat}>
 					<Button to="/" component={Link}>
 						<Typography variant="button" display="block" className={classes.ButtonText}>
 						Home
@@ -38,14 +48,14 @@ export default function SiteNav() {
 					</Button>
 				</Grid>
 
-				<Grid item xs={3} align="center">
+				<Grid item xs={3} align="center" className={classes.buttonFormat}>
 					<Dropdown className={classes.dropdown} type="CompSci" />
 				</Grid>
-				<Grid item xs={4} align="center">
+				<Grid item xs={4} align="center" className={classes.buttonFormat}>
 					<Dropdown className={classes.dropdown} type="ModelAndAnim" />
 				</Grid>
 
-				<Grid item xs={2} align="center">
+				<Grid item xs={2} align="center" className={classes.buttonFormat}>
 					<Button>
 						<a href="./assets/Jake Harris Resume.pdf" target="_blank" className={classes.ButtonLink}>
 							<Typography variant="button" display="block" className={classes.ButtonText}>

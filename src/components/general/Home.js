@@ -10,11 +10,7 @@ import Hidden from '@material-ui/core/Hidden';
 
 const useStyles = makeStyles((theme) => ({
   HelloText: {
-  	//color: theme.palette.teal.main,
-    [theme.breakpoints.down('xs')]: {
-      fontSize: '8rem',
-    },
-    fontSize: '12rem',
+    fontSize: '4rem',
   	fontFamily: 'Raleway, sansSerif',
     backgroundImage: 'linear-gradient(#66FCF1 70%, #1F2833 90%)',
     backgroundSize: '100%',
@@ -25,43 +21,47 @@ const useStyles = makeStyles((theme) => ({
 
   },
   HelloBox: {
-  	marginTop: '10%',
-  	marginBottom: '10%',
-  	marginLeft: '20px',
+  	marginTop: '5%',
+  	marginBottom: '5%',
     minHeight: '360px',
     [theme.breakpoints.down('sm')]: {
-      marginTop: '30%',
-      marginBottom: '30%',
+      marginTop: '10%',
+      marginBottom: '10%',
       minHeight: '240px'
     },
 
   },
   myName:{
-    backgroundImage: 'linear-gradient(#C5C6C7 70%, #1F2833 90%)',
+    //backgroundImage: 'linear-gradient(#FFFFFF 70%, #1F2833 90%)',
+    backgroundImage: 'linear-gradient(#66FCF1 70%, #1F2833 90%)',
     backgroundSize: '100%',
     backgroundClip: 'text',
     WebkitBackgroundClip: "text",
     MozBackgroundClip: "text",
     color: "transparent",
+    fontSize: "12vh",
     [theme.breakpoints.down('sm')]: {
-      fontSize: '4.5rem',
+      fontSize: "7.5vh",
     },
-    [theme.breakpoints.down('xs')]: {
-      fontSize: '2.5rem',
-    },
-
-
     fontFamily: 'Raleway, sansSerif',
   },
+
+  introText:{
+    //fontSize: "1.1rem",
+    fontSize: "2vh",
+    fontFamily: 'Raleway, sansSerif',
+    marginTop:"2%",
+    marginBottom:"2%",
+    color: "white",
+  },
   headShot:{
-    maxWidth: "60%",
+    width: "90%",
     display: "flex",
     marginLeft: "auto",
     marginRight: "auto",
-    marginTop: "5%",
   },
   WelcomeContent:{
-    height: "100px",
+    justifyContent: "center",
   },
   headShotCont:{
     display:"flex",
@@ -84,18 +84,18 @@ export default function Home(){
   };
 
 	return(<Grid container spacing={0} className={classes.WelcomeContent}>
-          <Grid item lg = {6} md = {12} container spacing={3}>
+          <Grid item lg = {6} md = {12} containe spacing={3}>
       			<Grid item xs={12} className={classes.HelloBox}>
-              <Slide direction="up" in={true} timeout={800} onEntered={handleChange} mountOnEnter unmountOnExit>
+              <Slide direction="up" in={true} timeout={800} onEntered={handleChange}>
                 <div>
                   <Fade in={true} timeout={2000}>
                     <Typography variant="h1" display="block" className={classes.HelloText}>
-                      Hello
+                      Hello,
           				  </Typography>
                   </Fade>
                 </div>
               </Slide>
-               <Slide direction="up" in={nameDelay} timeout={800} mountOnEnter unmountOnExit>
+               <Slide direction="up" in={nameDelay} timeout={800}>
                 <div>
                   <Fade in={true} style={{transitionDelay: '300ms'}} timeout={1000}>
             				<Typography variant="h1" display="block" className={classes.myName}>
@@ -104,12 +104,28 @@ export default function Home(){
                   </Fade>
                 </div>
               </Slide>
+
+              <Fade in={true} style={{transitionDelay: '2000ms'}} timeout={2000}>
+                <div>
+                <Typography variant="body2" className={classes.introText}>
+                  I graduated from the University of Notre Dame in the Spring of 2021.  Throughout my undergraduate career, I studied computer science with a concentration in media computing. I found this path particularly attractive because of its focus on creating tools and visuals that others could use and enjoy.
+                </Typography>
+                <Typography variant="body2" className={classes.introText}>
+                  Programming projects for coursework and fun are done primarily in C, C++, and Python, but I have experience, as you will see, with many other languages.  I have been working in Autodesk Maya for a little over 2 years, creating both hard surface and organic models, experimenting with different animation styles, and generally exploring the multitude of features the program has to offer.  Given my educational background and independent projects, I’m pursuing careers as a modeling artist, technical director, or gameplay programmer.
+                </Typography>
+                <Typography variant="body2" className={classes.introText}>
+                  Use the navigation menu above to explore some of my projects or check out my resume. Enjoy!
+                </Typography>
+                </div>            
+              </Fade>
+
       			</Grid>
+
       		</Grid>
           <Hidden mdDown>
-          <Grid item lg={6} className={classes.headShotCont}>
+          <Grid item lg={4} className={classes.headShotCont}>
 
-            <Fade in={true} style={{transitionDelay: '1100ms'}} timeout={1000}>
+            <Fade in={true} style={{transitionDelay: '2000ms'}} timeout={2000}>
               <div className={classes.headShotBox}>
                 <img src={process.env.PUBLIC_URL+ "/images/headShot.PNG"} alt="thisisMe" className={classes.headShot}/>
               </div>
