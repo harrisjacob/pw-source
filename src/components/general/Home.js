@@ -43,6 +43,9 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('sm')]: {
       fontSize: "7.5vh",
     },
+    [theme.breakpoints.down('xs')]: {
+      fontSize: "6vh",
+    },
     fontFamily: 'Raleway, sansSerif',
   },
 

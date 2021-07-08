@@ -30,6 +30,9 @@ const useStyles = makeStyles((theme) => ({
   buttonFormat: {
   	 alignSelf: "center",
   },
+  buttonObj: {
+  	minWidth: "0px",
+  }
 
 }));
 
@@ -41,7 +44,7 @@ export default function SiteNav() {
 
 	return (<Grid container spacing={3} justify="center" className={classes.NavForm}>
 				<Grid item xs={3} align="center" className={classes.buttonFormat}>
-					<Button to="/" component={Link}>
+					<Button to="/" component={Link}  style={{minWidth: '0px'}}>
 						<Typography variant="button" display="block" className={classes.ButtonText}>
 						Home
 						</Typography>
@@ -56,7 +59,7 @@ export default function SiteNav() {
 				</Grid>
 
 				<Grid item xs={2} align="center" className={classes.buttonFormat}>
-					<Button>
+					<Button  style={{minWidth: '0px'}}>
 						<a href="./assets/Jake Harris Resume.pdf" target="_blank" className={classes.ButtonLink}>
 							<Typography variant="button" display="block" className={classes.ButtonText}>
 								Resume
