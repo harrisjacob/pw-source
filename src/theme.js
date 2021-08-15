@@ -33,7 +33,6 @@ const theme = createMuiTheme({
         fontSize: "2rem",
     }
   },
-  
 
 });
 
